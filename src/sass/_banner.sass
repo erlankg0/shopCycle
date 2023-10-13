@@ -1,0 +1,87 @@
+.banner
+    display: grid
+    grid-template-columns: [start-banner] minmax(87rem, 1fr) [end-banner start-ad] minmax(26.5rem, 1fr) [end-ad]
+    grid-column-gap: 5rem
+    &__list
+        grid-column: start-banner / end-banner
+
+    &__item
+        img
+            width: 100%
+            object-fit: cover
+            object-position: center
+
+.ad_content
+    grid-column: start-ad / end-ad
+    width: 100%
+    max-width: 27rem
+    height: 100%
+    border: solid 1px #cdcdcd
+    justify-self: end
+
+    display: grid
+
+    &__top
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+
+    &__title
+        justify-self: center
+        align-self: center
+        grid-column: 1 / -1
+        font-size: 1.8rem
+        font-weight: 700
+        text-align: center
+
+    &__discount
+        color: white
+        font-size: 1.2rem
+        background-color: $blue
+        padding: .5rem 1rem
+        height: 30px
+        text-align: center
+        text-justify: center
+
+    &__price
+        grid-column: 2 / -1
+        justify-self: self-end
+
+        display: grid
+
+    &__current
+        color: $blue
+        font-size: 2.7rem
+        font-weight: bold
+    &__old
+        text-decoration: line-through
+        text-underline-position: 1
+        color: #c4c4c4
+        justify-self: self-end
+
+    &__img
+        grid-column: 1 / -1
+        align-self: center
+        justify-self: center
+
+    &__bottom
+        background-color: $background-color-gray
+        display: grid
+        grid-template-rows: repeat(2, 1fr)
+        align-items: center
+        justify-items: center
+
+    &__discount_title
+        font-weight: 400
+        font-style: normal
+        font-size: 1.8rem
+        line-height: normal
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+        text-align: center
+        color: $color-black-main
+
+    &__date
+        color: $blue
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+        font-size: 2rem
+        font-weight: 500
+        text-align: center

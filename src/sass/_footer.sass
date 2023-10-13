@@ -1,0 +1,30 @@
+.footer
+    background-color: $background-color-gray
+    grid-column: 1 / -1
+    display: grid
+    &__content
+        padding: 4rem 0
+        grid-column: center-start / center-end
+        display: grid
+        grid-template-columns: repeat(3, minmax(35rem, min-content))
+        grid-column-gap: 10rem
+        justify-content: space-between
+        justify-items: center
+        justify-self: self-start
+    &__following
+        display: grid
+
+    &__form
+        align-self: self-end
+    &__information
+        display: grid
+        grid-template-columns: repeat(2, minmax(15rem, min-content))
+        grid-column-gap: 4rem
+    &__social
+        display: grid
+
+.social
+    display: grid
+    grid-template-columns: repeat(4, min-content)
+    grid-column-gap: 2rem
+    align-self: center

@@ -1,0 +1,30 @@
+.header
+    display: grid
+    grid-template-columns: repeat(auto-fit, min-content)
+    padding-top: 1rem
+    grid-column: center-start / center-end
+    margin-bottom: 8rem
+    &__bottom
+        background-color: $background-color-gray
+
+    &__list
+        display: grid
+        grid-template-columns: 1fr 8rem 1fr
+        grid-gap: 3rem
+
+    &__item
+        align-self: center
+        justify-self: center
+        text-decoration: none
+        text-transform: uppercase
+        color: $color-black-main
+        
+.start
+    justify-self: self-start
+
+.end 
+    justify-self: self-end
+
+.actions
+    display: grid
+    grid-template-columns: repeat(3, minmax(2rem, 4rem))
