@@ -1,0 +1,42 @@
+.search
+    padding: 8rem 0
+
+    &__content
+        display: grid
+        grid-template-columns: 1fr
+        justify-content: center
+        
+.tabs
+    display: grid
+    grid-template-columns: repeat(3, minmax(30rem, min-content))
+
+.tab
+    border-radius: 5px
+    padding: .5rem 1rem
+    cursor: pointer
+    margin-bottom: 2.5rem
+    font-size: 20px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    border: solid 1px white
+    &:hover
+        background-color: $background-color-gray
+        border-color: $color-black-main
+
+    &.active
+        background-color: $background-color-gray
+        border: solid 1px $background-color-gray
+        font-weight: 700
+
+
+.content
+    display: none
+    grid-template-columns: 1fr 17rem
+    padding: 2.5
+    background-color: red
+    &.active
+        display: grid
+    input
+        border: solid 1px $background-color-gray
+        

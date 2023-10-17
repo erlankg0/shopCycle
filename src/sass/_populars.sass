@@ -1,0 +1,100 @@
+.popular
+    margin-bottom: 8rem
+    &__tabs
+        margin-top: 3rem
+        display: grid
+        grid-template-columns: repeat(auto-fit, minmax(10rem, min-content))
+        grid-column-gap: 5rem
+    &__tab
+        padding: .5rem 1rem
+        cursor: pointer
+        margin-bottom: 2.5rem
+        font-size: 20px
+        font-style: normal
+        font-weight: 400
+        line-height: normal
+        display: grid
+        align-self: center
+        border-bottom: solid 1px transparent
+        display: grid
+        justify-self: center
+
+
+        &:hover
+            border-bottom: solid 1px $blue
+
+    &__cards
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-column-gap: 3rem
+
+    &__card
+        border: solid 1px $background-color-gray
+        display: grid
+        grid-template-columns: 1fr
+        grid-template-rows: 4rem 20rem 3rem  repeat(2, 4.5rem)
+        border-radius: 1rem
+        transition: all .5s
+        position: relative
+        &:hover
+            box-shadow: 0px 4px 4px 4px $background-color-gray
+            transform: translateY(-5px)
+            color: $blue
+
+            .popular__card_details
+                background-color: $background-color-gray
+                opacity: .85
+                display: grid
+
+        &_top
+            grid-row: 1 / 2
+            padding: 1rem
+            justify-self: self-end
+
+        &_img
+            grid-row: 2 / 3
+            width: 20rem
+            height: 20rem
+            object-fit: cover
+            object-position: center
+            justify-self: center
+            align-self: center
+
+        &_title
+            grid-row: 3 / 4
+            justify-self: center
+            align-self: self-end
+            text-align: center
+
+
+        &_price
+            grid-row: 4 / 5
+            justify-self: center
+            align-self: center
+
+        &_footer
+            grid-row: 5 / 6
+            display: grid
+
+            img 
+                justify-self: self-end
+                background-color: $blue
+                padding: 1rem
+                border-top-left-radius: 1.5rem
+
+            a
+                color: $blue
+                text-decoration-line: underline
+                text-decoration-skip: 1rem
+                text-align: center
+        &_details
+            position: absolute
+            top: 40%
+            left: 50%
+            transform: translateX(-50%) translateY(-40%)
+            opacity: 0
+            width: 80%
+            text-align: center
+            padding: 1rem 0
+            border-radius: 5px
+            cursor: pointer

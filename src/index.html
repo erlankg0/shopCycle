@@ -111,13 +111,247 @@
             </section>
             <!-- banner end -->
 
-            <section class="looking">
+            <!-- search -->
+            <section class="search">
+                <!-- tabs -->
                 <div class="tabs">
-                    <button type="button">tab1</button>
-                    <button type="button">tab2</button>
-                    <button type="button">tab3</button>
+                    <div class="tab active" onclick="changeTab('tab1')" data-tab="tab1">Поиск по номеру</div>
+                    <div class="tab" onclick="changeTab('tab2')" data-tab="tab2">Поиск по марке</div>
+                    <div class="tab" onclick="changeTab('tab3')" data-tab="tab3">Поиск по названию товара</div>
                 </div>
+                <!-- tabs end -->
+
+                <!-- search__content  -->
+                <div class="search__content">
+                    <div class="content active " id="tab1-content">
+                        <input type="text" name="" id="" placeholder="Поиск по номеру">
+                        <button type="submit" class="btn">Поиск</button>
+                    </div>
+                    <div class="content" id="tab2-content">
+                        <input type="text" name="" id="" placeholder="Поиск по марке">
+                        <button type="submit" class="btn">Поиск</button>
+                    </div>
+                    <div class="content" id="tab3-content">
+                        <input type="text" name="" id="" placeholder="Поиск по названию товара">
+                        <button type="submit" class="btn">Поиск</button>
+                    </div>
+                </div>
+                <!-- search__content end -->
             </section>
+            <!-- search end -->
+
+            <!-- categories_card -->
+            <section class="categories_cards">
+
+                <div class="categories_cards__card">
+                    <div class="categories_cards__text">
+                        <h3 class="title_3">Квадроциклы</h3>
+                        <a href="#" class="detail">Подробнее ></a>
+                    </div>
+                    <div class="categories_cards__img">
+                        <img src="./img/ATV.png" alt="atv" srcset="">
+                    </div>
+                </div>
+
+                <div class="categories_cards__card">
+                    <div class="categories_cards__text">
+                        <h3 class="title_3">Гидроциклы</h3>
+                        <a href="#" class="detail">Подробнее ></a>
+                    </div>
+                    <div class="categories_cards__img">
+                        <img src="./img/jet.png" alt="atv" srcset="">
+                    </div>
+                </div>
+
+                <div class="categories_cards__card">
+                    <div class="categories_cards__text">
+                        <h3 class="title_3">Катера</h3>
+                        <a href="#" class="detail">Подробнее ></a>
+                    </div>
+                    <div class="categories_cards__img">
+                        <img src="./img/boat.png" alt="atv" srcset="">
+                    </div>
+                </div>
+                
+                <div class="categories_cards__card">
+                    <div class="categories_cards__text">
+                        <h3 class="title_3">Снегоходы</h3>
+                        <a href="#" class="detail">Подробнее ></a>
+                    </div>
+                    <div class="categories_cards__img">
+                        <img src="./img/avtwinner.png" alt="atv" srcset="">
+                    </div>
+                </div>
+
+                <div class="categories_cards__card">
+                    <div class="categories_cards__text">
+                        <h3 class="title_3">Вездеходы</h3>
+                        <a href="#" class="detail">Подробнее ></a>
+                    </div>
+                    <div class="categories_cards__img">
+                        <img src="./img/offroad.png" alt="atv" srcset="">
+                    </div>
+                </div>
+
+                <div class="categories_cards__card">
+                    <div class="categories_cards__text">
+                        <h3 class="title_3">двигатели</h3>
+                        <a href="#" class="detail">Подробнее ></a>
+                    </div>
+                    <div class="categories_cards__img">
+                        <img src="./img/engine.jpg" alt="atv" srcset="">
+                    </div>
+                </div>
+
+            </section>
+            <!-- categories_card end  -->
+
+            <!-- popular -->
+            <section class="popular">
+                <div class="title_3">Популярные товары</div>
+                <!-- popular__tabs -->
+                <div class="popular__tabs">
+                    <div class="popular__tab"  data-tab__popular="запчасти">запчасти</div>
+                    <div class="popular__tab"  data-tab__popular="моторы">моторы</div>
+                    <div class="popular__tab"  data-tab__popular="шины">шины</div>
+                    <div class="popular__tab"  data-tab__popular="электроника">электроника</div>
+                    <div class="popular__tab"  data-tab__popular="инструменты">инструменты</div>
+                    <div class="popular__tab"  data-tab__popular="аксессуары">аксессуары</div>
+                </div>
+                <!-- popular__tabs end -->
+
+                <!-- popular__content -->
+                <div class="popular__content">
+                    <div class="popular__cards " id="запчасти-content">
+                        <!-- popular__card -->
+                        <div class="popular__card">
+                            <div class="popular__card_top">
+                                <img src="./icons/like.svg" alt="" srcset="">
+                            </div>
+                            <img src="./img/bag.png" alt="bag" srcset="" class="popular__card_img">
+                            <p class="popular__card_title title_2">Водонепроницаемый Рюкзак</p>
+                            <p class="popular__card_price title_3">6 900 ₽</p>
+                            <div class="popular__card_footer">
+                                <img src="./icons/shoppingCart.svg" alt="shopping cart icon" srcset="">
+                            </div>
+                            <a class="popular__card_details">посмотреть товар</a>
+                        </div>
+                        <!-- popular__card end -->
+
+                          <!-- popular__card -->
+                          <div class="popular__card">
+                            <div class="popular__card_top">
+                                <img src="./icons/like.svg" alt="" srcset="">
+                            </div>
+                            <img src="./img/safe.png" alt="bag" srcset="" class="popular__card_img">
+                            <p class="popular__card_title title_2">Водонепроницаемый Рюкзак</p>
+                            <p class="popular__card_price title_3">6 900 ₽</p>
+                            <div class="popular__card_footer">
+                                <img src="./icons/shoppingCart.svg" alt="shopping cart icon" srcset="">
+                            </div>
+                            <a class="popular__card_details">посмотреть товар</a>
+
+                        </div>
+                        <!-- popular__card end -->
+
+                     
+
+                          <!-- popular__card -->
+                        <div class="popular__card">
+                            <div class="popular__card_top">
+                                <img src="./icons/like.svg" alt="" srcset="">
+                            </div>
+                            <img src="./img/audio.png" alt="bag" srcset="" class="popular__card_img">
+                            <p class="popular__card_title title_2">Водонепроницаемый Рюкзак</p>
+                            <p class="popular__card_price title_3">нет в наличии</p>
+                            <div class="popular__card_footer">
+                                <a href="#">Сообщить о поступлении</a>
+                            </div>
+                            <a class="popular__card_details">посмотреть товар</a>
+                        </div>
+                        <!-- popular__card end -->
+
+                    </div>
+                </div>
+                <!-- popular__content end -->
+            </section>
+            <!-- popular end -->
+
+            
+            <!-- popular -->
+            <section class="popular">
+                <div class="title_3">Популярные товары</div>
+                <!-- popular__tabs -->
+                <div class="popular__tabs">
+                    <div class="popular__tab"  data-tab__popular="запчасти">запчасти</div>
+                    <div class="popular__tab"  data-tab__popular="моторы">моторы</div>
+                    <div class="popular__tab"  data-tab__popular="шины">шины</div>
+                    <div class="popular__tab"  data-tab__popular="электроника">электроника</div>
+                    <div class="popular__tab"  data-tab__popular="инструменты">инструменты</div>
+                    <div class="popular__tab"  data-tab__popular="аксессуары">аксессуары</div>
+                </div>
+                <!-- popular__tabs end -->
+
+                <!-- popular__content -->
+                <div class="popular__content">
+                    <div class="popular__cards " id="запчасти-content">
+                        <!-- popular__card -->
+                        <div class="popular__card">
+                            <div class="popular__card_top">
+                                <img src="./icons/like.svg" alt="" srcset="">
+                            </div>
+                            <img src="./img/bag.png" alt="bag" srcset="" class="popular__card_img">
+                            <p class="popular__card_title title_2">Водонепроницаемый Рюкзак</p>
+                            <p class="popular__card_price title_3">6 900 ₽</p>
+                            <div class="popular__card_footer">
+                                <img src="./icons/shoppingCart.svg" alt="shopping cart icon" srcset="">
+                            </div>
+                            <a class="popular__card_details">посмотреть товар</a>
+                        </div>
+                        <!-- popular__card end -->
+
+                          <!-- popular__card -->
+                          <div class="popular__card">
+                            <div class="popular__card_top">
+                                <img src="./icons/like.svg" alt="" srcset="">
+                            </div>
+                            <img src="./img/safe.png" alt="bag" srcset="" class="popular__card_img">
+                            <p class="popular__card_title title_2">Водонепроницаемый Рюкзак</p>
+                            <p class="popular__card_price title_3">6 900 ₽</p>
+                            <div class="popular__card_footer">
+                                <img src="./icons/shoppingCart.svg" alt="shopping cart icon" srcset="">
+                            </div>
+                            <a class="popular__card_details">посмотреть товар</a>
+
+                        </div>
+                        <!-- popular__card end -->
+
+                     
+
+                          <!-- popular__card -->
+                        <div class="popular__card">
+                            <div class="popular__card_top">
+                                <img src="./icons/like.svg" alt="" srcset="">
+                            </div>
+                            <img src="./img/audio.png" alt="bag" srcset="" class="popular__card_img">
+                            <p class="popular__card_title title_2">Водонепроницаемый Рюкзак</p>
+                            <p class="popular__card_price title_3">нет в наличии</p>
+                            <div class="popular__card_footer">
+                                <a href="#">Сообщить о поступлении</a>
+                            </div>
+                            <a class="popular__card_details">посмотреть товар</a>
+                        </div>
+                        <!-- popular__card end -->
+
+                    </div>
+                </div>
+                <!-- popular__content end -->
+            </section>
+            <!-- popular end -->
+
+
+            
+
         </main>
         <!-- main end -->
 
@@ -152,7 +386,7 @@
                         <li class="item"><a href="#" class="footer__link">Магазины</a></li>
                     </ul>
 
-                    <ul class="footer__list"> 
+                    <ul class="footer__list">
                         <li class="item"><a href="#" class="footer__link bold">Интернет-магазин</a></li>
                         <li class="item"><a href="#" class="footer__link">Доставка и самовывоз</a></li>
                         <li class="item"><a href="#" class="footer__link">Оплата</a></li>
@@ -186,5 +420,6 @@
     <!-- container end -->
 
 </body>
+<script defer src="./js/script.js"></script>
 
 </html>
